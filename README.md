@@ -13,7 +13,7 @@ The optocoupler is connected directly to the Raspberry Pi's GPIO header via a lo
 
 **Circuit Diagram**
 
-![Circuit Diagram](circuit.png2)
+![Circuit Diagram](circuit2.png)
 
 **4N35 Optocoupler**
 
