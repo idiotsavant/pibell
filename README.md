@@ -146,11 +146,11 @@ Start the service now (no need to reboot):
 
 `sudo systemctl start supervisor`
 
-The pibell.py script can now be monitored and started/stopped using **supervisorctl**.
+The ![pibell.py](pibell.py) script can now be monitored and started/stopped using **supervisorctl**.
 
 `sudo supervisorctl` opens a command console with all options (and help).
 
-`sudo supervisorctl restart pibell` will restart the pibell.py script.
+`sudo supervisorctl restart pibell` will restart the ![pibell.py](pibell.py) script.
 
 
 
