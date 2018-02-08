@@ -9,7 +9,7 @@ The solution described here uses a Raspberry Pi Zero W to detect a doorbell pres
 
 The doorbell system runs at 15 V AC. A bridge rectifier (DF06M-E3/45) is used to convert this to DC, and a 2.2 KΩ current limiting resistor limits the current reaching the optocoupler (4N35). An LED provides visual confirmation that the doorbell is being rung (for testing).
 
-The optocoupler is connected directly to the Raspberry Pi's GPIO header via a low pass filter. Without this filter (the two resistors and the capacitor) there were false positives due to RF interference.
+The optocoupler is connected to the Raspberry Pi's GPIO header via a low pass filter. Without this filter (the two resistors and the capacitor) there were false positives due to RF interference.
 
 **Circuit Diagram**
 
