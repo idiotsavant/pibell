@@ -13,13 +13,13 @@ The optocoupler is connected directly to the Raspberry Pi's GPIO header, to pin 
 
 **Circuit Diagram**
 
-![Circuit Diagram](https://gist.githubusercontent.com/idiotsavant/eafb8b409172509084199d50f6cdbfd7/raw/circuit.png)
+![Circuit Diagram](circuit2.png)
 
 **4N35 Optocoupler**
 
 The optocoupler used here actually has 6 pins. Pins 1 and 2 in the image below are connected to the bridge rectifier; pins 5 and 4 are connected to the GPIO header.
 
-![4N35 pin layout](https://gist.githubusercontent.com/idiotsavant/eafb8b409172509084199d50f6cdbfd7/raw/4N35.png)
+![4N35 pin layout](4N35.png)
 
 **Pin layout of Raspberry Pi Zero W**
 
