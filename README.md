@@ -9,23 +9,21 @@ The solution described here uses a Raspberry Pi Zero W to detect a doorbell pres
 
 The doorbell system runs at 15 V AC. A bridge rectifier (DF06M-E3/45) is used to convert this to DC, and a 2.2 KΩ current limiting resistor limits the current reaching the optocoupler (4N35). An LED provides visual confirmation that the doorbell is being rung (for testing).
 
-The optocoupler is connected directly to the Raspberry Pi's GPIO header, to pin 25 and one of the ground pins.
+The optocoupler is connected directly to the Raspberry Pi's GPIO header via a low pass filter. Without this filter (the two resistors and the capacitor) there were false positives due to RF interference.
 
 **Circuit Diagram**
 
-![Circuit Diagram](https://gist.githubusercontent.com/idiotsavant/eafb8b409172509084199d50f6cdbfd7/raw/circuit.png)
+![Circuit Diagram](circuit.png2)
 
 **4N35 Optocoupler**
 
 The optocoupler used here actually has 6 pins. Pins 1 and 2 in the image below are connected to the bridge rectifier; pins 5 and 4 are connected to the GPIO header.
 
-![4N35 pin layout](https://gist.githubusercontent.com/idiotsavant/eafb8b409172509084199d50f6cdbfd7/raw/4N35.png)
+![4N35 pin layout](4N35.png)
 
 **Pin layout of Raspberry Pi Zero W**
 
 ![Raspberry Pi GPIO BCM numbering](https://pinout.xyz/resources/raspberry-pi-pinout.png)
-
-**_RF interference can produce false positives. Keep the wires from the optocoupler to the GPIO header as short as possible._**
 
 
 ## Part 2 - Installation
